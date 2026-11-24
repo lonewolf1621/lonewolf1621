@@ -1,130 +1,45 @@
-<div align="center">
+## Hi, I'm Vishal Kumar Reddy Gudla
 
-<!-- Visitor Counter -->
-![Profile Views](https://komarev.com/ghpvc/?username=lonewolf1621&color=0891b2&style=for-the-badge&label=PROFILE+VIEWS)
+**AI / ML Engineer · London, UK** · I build ML systems that are evaluated honestly, deployed, and kept running.
 
-<!-- Wave GIF -->
-<img src="https://raw.githubusercontent.com/ABSphreak/ABSphreak/master/gifs/Hi.gif" width="35px" />
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-vishalkumar--gudla-0077B5?logo=linkedin&logoColor=white)](https://linkedin.com/in/vishalkumar-gudla)
+[![Email](https://img.shields.io/badge/Email-reddyvishal0311%40gmail.com-D14836?logo=gmail&logoColor=white)](mailto:reddyvishal0311@gmail.com)
+[![Portfolio](https://img.shields.io/badge/Portfolio-bit.ly%2FVishalgudla-555?logo=google-chrome&logoColor=white)](https://bit.ly/Vishalgudla)
 
-<!-- Animated Typing Header -->
-<a href="https://git.io/typing-svg">
-  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=700&size=32&duration=3000&pause=1000&color=0891B2&center=true&vCenter=true&width=700&lines=Hi%2C+I'm+Vishal+Kumar+Reddy+%F0%9F%91%8B;AI+%2F+ML+Engineer+%7C+London%2C+UK;RAG+Pipelines+%7C+MLOps+%7C+FastAPI;Turning+Data+into+Production+AI+Systems" alt="Typing SVG" />
-</a>
-
-</div>
+- **4+ years** of production software engineering, **2+ years** building end-to-end ML pipelines
+- Focus: semantic search and RAG, computer vision, MLOps (CI, monitoring, reproducible training)
+- Open to **AI/ML, ML platform, backend and data engineering** roles in the UK
 
 ---
 
-## 🧠 About Me
+### Featured projects
 
-I'm a **AI/ML Engineer** based in London, UK, with **4+ years of production software engineering** and **2+ years** designing end-to-end machine learning pipelines. I love building things that actually ship — RAG systems, MLOps workflows, and data pipelines that process tens of thousands of records in production.
+#### [HireSense AI](https://github.com/lonewolf1621/hiresense-ai): semantic CV ↔ job matching · [live demo](https://hiresense-ai-vishal.streamlit.app) · [API](https://hiresense-ai-3k4d.onrender.com/docs)
 
-- 🔭 Currently building **HireSense AI**, a live semantic CV ↔ job matching platform (embeddings + FAISS evidence retrieval), publicly benchmarked on 1,759 labelled CV/job pairs
-- 🏥 Built a **Thyroid ML System**: ultrasound nodule classifier with **ROC-AUC 0.93**, and **0.80 on an independent hospital's data**, deployed with FastAPI
-- ⚡ Passionate about **LLMs, semantic search, and making ML systems production-ready**
-- 🌍 Open to exciting **AI/ML, Backend, or Data Engineering** opportunities in the UK & globally
-- 📫 Reach me at **reddyvishal0311@gmail.com**
+[![tests](https://github.com/lonewolf1621/hiresense-ai/actions/workflows/tests.yml/badge.svg)](https://github.com/lonewolf1621/hiresense-ai/actions/workflows/tests.yml) [![uptime](https://github.com/lonewolf1621/hiresense-ai/actions/workflows/uptime.yml/badge.svg)](https://github.com/lonewolf1621/hiresense-ai/actions/workflows/uptime.yml)
 
----
+`Python` `FastAPI` `Sentence Transformers (ONNX)` `FAISS` `Streamlit` `GitHub Actions`
 
-## 🛠️ Tech Stack
+- Scores a CV against a job advert: matched and missing skills, plus the CV line that best supports each requirement (MiniLM embeddings + FAISS retrieval, with job-advert boilerplate filtered out)
+- **Ranks up to 10 CVs** against one job, with CSV and report downloads
+- Benchmarked on **1,759 human-labelled CV/job pairs** with results published, including what didn't work; ~16,700 pairs/hour on one CPU
+- Runs on its own: uptime checks every 6 hours with alert issues, a weekly benchmark regression guard, Dependabot
 
-### 🤖 ML & AI
-![Python](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white)
-![PyTorch](https://img.shields.io/badge/PyTorch-EE4C2C?style=for-the-badge&logo=pytorch&logoColor=white)
-![scikit-learn](https://img.shields.io/badge/scikit--learn-F7931E?style=for-the-badge&logo=scikitlearn&logoColor=white)
-![XGBoost](https://img.shields.io/badge/XGBoost-189AB4?style=for-the-badge&logo=xgboost&logoColor=white)
-![spaCy](https://img.shields.io/badge/spaCy-09A3D5?style=for-the-badge&logo=spacy&logoColor=white)
-![HuggingFace](https://img.shields.io/badge/HuggingFace-FFD21E?style=for-the-badge&logo=huggingface&logoColor=black)
-![FAISS](https://img.shields.io/badge/FAISS-0467DF?style=for-the-badge&logo=meta&logoColor=white)
+#### [Thyroid ML System](https://github.com/lonewolf1621/thyroid-ml-system): clinical risk + ultrasound classification · [live demo](https://thyroid-ml-system.onrender.com)
 
-### 🔧 Backend & APIs
-![FastAPI](https://img.shields.io/badge/FastAPI-009688?style=for-the-badge&logo=fastapi&logoColor=white)
-![Streamlit](https://img.shields.io/badge/Streamlit-FF4B4B?style=for-the-badge&logo=streamlit&logoColor=white)
-![PostgreSQL](https://img.shields.io/badge/PostgreSQL-4169E1?style=for-the-badge&logo=postgresql&logoColor=white)
-![REST API](https://img.shields.io/badge/REST%20APIs-005571?style=for-the-badge&logo=swagger&logoColor=white)
-![OAuth](https://img.shields.io/badge/OAuth2.0-EB5424?style=for-the-badge&logo=auth0&logoColor=white)
-![ChromaDB](https://img.shields.io/badge/ChromaDB-FF6F00?style=for-the-badge&logo=databricks&logoColor=white)
+[![tests](https://github.com/lonewolf1621/thyroid-ml-system/actions/workflows/ml_pipeline.yml/badge.svg)](https://github.com/lonewolf1621/thyroid-ml-system/actions/workflows/ml_pipeline.yml) [![uptime](https://github.com/lonewolf1621/thyroid-ml-system/actions/workflows/uptime.yml/badge.svg)](https://github.com/lonewolf1621/thyroid-ml-system/actions/workflows/uptime.yml)
 
-### ⚙️ MLOps & Data Engineering
-![MLflow](https://img.shields.io/badge/MLflow-0194E2?style=for-the-badge&logo=mlflow&logoColor=white)
-![Docker](https://img.shields.io/badge/Docker-2496ED?style=for-the-badge&logo=docker&logoColor=white)
-![Apache Spark](https://img.shields.io/badge/Apache%20Spark-E25A1C?style=for-the-badge&logo=apachespark&logoColor=white)
-![BigQuery](https://img.shields.io/badge/BigQuery-4285F4?style=for-the-badge&logo=googlebigquery&logoColor=white)
-![GCP](https://img.shields.io/badge/GCP-4285F4?style=for-the-badge&logo=googlecloud&logoColor=white)
-![GitHub Actions](https://img.shields.io/badge/GitHub%20Actions-2088FF?style=for-the-badge&logo=githubactions&logoColor=white)
-![Linux](https://img.shields.io/badge/Linux-FCC624?style=for-the-badge&logo=linux&logoColor=black)
+`PyTorch` `EfficientNet-B0` `scikit-learn` `XGBoost` `MLflow` `FastAPI` `Docker`
 
-### 🌐 Web & Other
-![Java](https://img.shields.io/badge/Java-ED8B00?style=for-the-badge&logo=openjdk&logoColor=white)
-![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)
-![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white)
-![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white)
-![Android](https://img.shields.io/badge/Android-3DDC84?style=for-the-badge&logo=android&logoColor=white)
-![MySQL](https://img.shields.io/badge/MySQL-4479A1?style=for-the-badge&logo=mysql&logoColor=white)
+- Benign vs malignant ultrasound classifier: **ROC-AUC 0.93** on the TN5000 test set and **0.80 on TN3K**, an independent hospital's data
+- **Grad-CAM heatmaps** show which image regions drove each prediction
+- Hypothyroidism risk from lab values with three tracked models; **batch CSV scoring** for up to 1,000 patients
+- Model card, input validation, tests in CI, Docker deployment and automated live checks
 
 ---
 
-## 🚀 Featured Projects
+### Tech stack
 
-### 🔍 [HireSense AI: Semantic CV ↔ Job Matching](https://github.com/lonewolf1621/hiresense-ai) · [Live demo](https://hiresense-ai-vishal.streamlit.app)
-> **Python · FastAPI · Sentence Transformers · FAISS · ONNX Runtime · Streamlit · GitHub Actions**
-
-Paste or upload a CV and a job advert to get a match score, matched and missing skills, and for every requirement the CV line that best supports it. Skill extraction plus 384-dim MiniLM embeddings with FAISS retrieval; job-advert boilerplate is filtered out before scoring. Benchmarked on a public dataset of **1,759 human-labelled CV/job pairs** with results reported openly; scores **~16,700 pairs/hour on one CPU**. JWT auth, PDF/DOCX upload, pytest suite and CI.
-
----
-
-### 🏥 [Thyroid ML System (v2)](https://github.com/lonewolf1621/thyroid-ml-system) · [Live demo](https://thyroid-ml-system.onrender.com)
-> **Python · PyTorch · EfficientNet · scikit-learn · XGBoost · MLflow · FastAPI · Docker**
-
-Hypothyroidism risk from clinical lab values and benign vs malignant thyroid ultrasound classification. Image model trained on TN5000's official split: **ROC-AUC 0.93** on the held-out test set and **0.80 on TN3K, an independent hospital's dataset**. Tabular pipelines tracked in MLflow; FastAPI service with input validation, model card, automated tests and CI, deployed on Render.
-
----
-
-## 📊 GitHub Stats
-
-<div align="center">
-
-<img src="https://github-readme-stats.vercel.app/api?username=lonewolf1621&show_icons=true&theme=tokyonight&hide_border=true&count_private=true&include_all_commits=true" height="165" />
-<img src="https://github-readme-stats.vercel.app/api/top-langs/?username=lonewolf1621&layout=compact&theme=tokyonight&hide_border=true&langs_count=8" height="165" />
-
-</div>
-
-<div align="center">
-
-[![GitHub Streak](https://github-readme-streak-stats.herokuapp.com/?user=lonewolf1621&theme=tokyonight&hide_border=true)](https://git.io/streak-stats)
-
-</div>
-
----
-
-## 🏆 GitHub Trophies
-
-<div align="center">
-
-[![trophy](https://github-profile-trophy.vercel.app/?username=lonewolf1621&theme=darkhub&no-frame=true&no-bg=true&margin-w=6&column=7)](https://github.com/ryo-ma/github-profile-trophy)
-
-</div>
-
----
-
-## 🤝 Connect With Me
-
-<div align="center">
-
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-Vishal%20Kumar%20Reddy%20Gudla-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://linkedin.com/in/vishalkumar-gudla)
-[![GitHub](https://img.shields.io/badge/GitHub-lonewolf1621-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/lonewolf1621)
-[![Portfolio](https://img.shields.io/badge/Portfolio-bit.ly%2FVishalgudla-FF5722?style=for-the-badge&logo=google-chrome&logoColor=white)](https://bit.ly/Vishalgudla)
-[![Email](https://img.shields.io/badge/Email-reddyvishal0311%40gmail.com-D14836?style=for-the-badge&logo=gmail&logoColor=white)](mailto:reddyvishal0311@gmail.com)
-
-</div>
-
----
-
-<div align="center">
-
-*"Building ML systems that don't just work in notebooks — they run in production."*
-
-⭐ **If you find my work interesting, consider starring a repo!**
-
-</div>
+**ML / AI:** Python · PyTorch · scikit-learn · XGBoost · Hugging Face · Sentence Transformers · FAISS · spaCy
+**Backend:** FastAPI · REST APIs · PostgreSQL · Streamlit
+**MLOps / data:** MLflow · Docker · GitHub Actions · GCP · BigQuery · Apache Spark · Linux
