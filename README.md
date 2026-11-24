@@ -19,8 +19,8 @@
 
 I'm a **AI/ML Engineer** based in London, UK, with **4+ years of production software engineering** and **2+ years** designing end-to-end machine learning pipelines. I love building things that actually ship — RAG systems, MLOps workflows, and data pipelines that process tens of thousands of records in production.
 
-- 🔭 Currently building **HireSense AI** — a RAG-powered recruitment intelligence platform that cut manual screening time by **70%**
-- 🏥 Built a **Thyroid Diagnostic ML System** achieving **0.97 ROC-AUC** with full MLOps infrastructure
+- 🔭 Currently building **HireSense AI**, a live semantic CV ↔ job matching platform (embeddings + FAISS evidence retrieval), publicly benchmarked on 1,759 labelled CV/job pairs
+- 🏥 Built a **Thyroid ML System**: ultrasound nodule classifier with **ROC-AUC 0.93**, and **0.80 on an independent hospital's data**, deployed with FastAPI
 - ⚡ Passionate about **LLMs, semantic search, and making ML systems production-ready**
 - 🌍 Open to exciting **AI/ML, Backend, or Data Engineering** opportunities in the UK & globally
 - 📫 Reach me at **reddyvishal0311@gmail.com**
@@ -67,17 +67,17 @@ I'm a **AI/ML Engineer** based in London, UK, with **4+ years of production soft
 
 ## 🚀 Featured Projects
 
-### 🔍 [HireSense AI — RAG-Powered Recruitment Platform](https://github.com/lonewolf1621/hiresense-ai)
-> **Python · FastAPI · FAISS · Sentence Transformers · Streamlit · GCP**
+### 🔍 [HireSense AI: Semantic CV ↔ Job Matching](https://github.com/lonewolf1621/hiresense-ai) · [Live demo](https://hiresense-ai-vishal.streamlit.app)
+> **Python · FastAPI · Sentence Transformers · FAISS · ONNX Runtime · Streamlit · GitHub Actions**
 
-A production-grade RAG system for semantic resume-job matching. Achieved **Precision 0.89, Recall 0.85, F1 0.87** on 500+ annotated pairs. Processes **500+ resume-job pairs/hour** and reduced manual screening by **70%** (15 min → <2 min per candidate).
+Paste or upload a CV and a job advert to get a match score, matched and missing skills, and for every requirement the CV line that best supports it. Skill extraction plus 384-dim MiniLM embeddings with FAISS retrieval; job-advert boilerplate is filtered out before scoring. Benchmarked on a public dataset of **1,759 human-labelled CV/job pairs** with results reported openly; scores **~16,700 pairs/hour on one CPU**. JWT auth, PDF/DOCX upload, pytest suite and CI.
 
 ---
 
-### 🏥 [Thyroid ML Diagnostic System — End-to-End MLOps](https://github.com/lonewolf1621/thyroid-ml-system)
-> **Python · Random Forest · XGBoost · EfficientNet · MLflow · Evidently AI · Docker**
+### 🏥 [Thyroid ML System (v2)](https://github.com/lonewolf1621/thyroid-ml-system) · [Live demo](https://thyroid-ml-system.onrender.com)
+> **Python · PyTorch · EfficientNet · scikit-learn · XGBoost · MLflow · FastAPI · Docker**
 
-Dual-pipeline system (tabular + medical image) trained on 3,711 clinical records. **ROC-AUC: 0.97 | Balanced Accuracy: 96.2%**. Full MLOps: experiment tracking, drift detection, CI/CD, and HIPAA-compliant inference logging.
+Hypothyroidism risk from clinical lab values and benign vs malignant thyroid ultrasound classification. Image model trained on TN5000's official split: **ROC-AUC 0.93** on the held-out test set and **0.80 on TN3K, an independent hospital's dataset**. Tabular pipelines tracked in MLflow; FastAPI service with input validation, model card, automated tests and CI, deployed on Render.
 
 ---
 
