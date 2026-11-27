@@ -36,10 +36,20 @@
 - Hypothyroidism risk from lab values with three tracked models; **batch CSV scoring** for up to 1,000 patients
 - Model card, input validation, tests in CI, Docker deployment and automated live checks
 
+#### [SecurePay 3FA](https://github.com/lonewolf1621/THREE-FACTOR-AUTHENTICATION-FOR-ONLINE-TRANSACTIONS-): risk-based three-factor authentication for payments · [live demo](https://three-factor-authentication-for-online.onrender.com)
+
+[![ci](https://github.com/lonewolf1621/THREE-FACTOR-AUTHENTICATION-FOR-ONLINE-TRANSACTIONS-/actions/workflows/ci.yml/badge.svg)](https://github.com/lonewolf1621/THREE-FACTOR-AUTHENTICATION-FOR-ONLINE-TRANSACTIONS-/actions/workflows/ci.yml) [![codeql](https://github.com/lonewolf1621/THREE-FACTOR-AUTHENTICATION-FOR-ONLINE-TRANSACTIONS-/actions/workflows/codeql.yml/badge.svg)](https://github.com/lonewolf1621/THREE-FACTOR-AUTHENTICATION-FOR-ONLINE-TRANSACTIONS-/actions/workflows/codeql.yml) [![uptime](https://github.com/lonewolf1621/THREE-FACTOR-AUTHENTICATION-FOR-ONLINE-TRANSACTIONS-/actions/workflows/uptime.yml/badge.svg)](https://github.com/lonewolf1621/THREE-FACTOR-AUTHENTICATION-FOR-ONLINE-TRANSACTIONS-/actions/workflows/uptime.yml)
+
+`Python` `FastAPI` `WebAuthn / passkeys` `TOTP` `scikit-learn` `Docker` `CodeQL`
+
+- Password (scrypt), authenticator-app code (RFC 6238) and **passkey with fingerprint/face**: a risk model decides how many factors each login and payment needs
+- PSD2-style rules: low-value exemption, step-up for larger payments, and passkey signatures **bound to the amount and payee**
+- Threat model, audit trail without secrets, strict CSP; Bandit, pip-audit and CodeQL in CI; live checks every 6 hours
+
 ---
 
 ### Tech stack
 
 **ML / AI:** Python · PyTorch · scikit-learn · XGBoost · Hugging Face · Sentence Transformers · FAISS · spaCy
-**Backend:** FastAPI · REST APIs · PostgreSQL · Streamlit
+**Backend & security:** FastAPI · REST APIs · PostgreSQL · Streamlit · WebAuthn/passkeys · TOTP · OWASP practices
 **MLOps / data:** MLflow · Docker · GitHub Actions · GCP · BigQuery · Apache Spark · Linux
